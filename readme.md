@@ -164,7 +164,30 @@ HTPPS: This is a secure version of HTTP. It is the primary protocol used to send
 
 It is encryted to increase the security of data transfer.(23)
 
-It is used a protocol called Transport Layer Security(TLS). It is important because it avoids websites from having their information transmit easily access or viewed by anybody sneaking on the network.
+It is used a protocol called Transport Layer Security(TLS) but formely known as Secure Sockets Layer(SSL). It is important because it avoids websites from having their information transmit easily access or viewed by anybody sneaking on the network.(23)
+
+**Web browsers:**
+
+A web browser is a software application that allows us to access to the World Wide Web.(24)
+
+Web browsers are used primarily for displaying and accessing websites on the internet.
+A web request is a communicating message that is transmitted between the client and the servers. A client enter a URL address and request to connect the website or request to get information. The web browser then connect to the server to get access to the website or get information.
+
+If the website or requested information exists and then the server sends the information to the client or web browser.
+
+Rendering turns a website code into the interactive pages that users see when they go the website.(25)
+
+Devtools are essentials for developer to test their codes, and debug.(26)
+
+## Question 4
+
+**Identify** THREE data structures used in the Python programming language and explain the reasons for using each.
+
+Data structures are important features of any programming languages. Python has different types of data structure such as lists, arrays,dictionaries,tuples etc..
+
+I will explain lists,arrays and dictionaries.
+
+**Lists:**
 
 ## References
 
@@ -211,3 +234,9 @@ It is used a protocol called Transport Layer Security(TLS). It is important beca
 22. [tutorialspoint](https://www.tutorialspoint.com/http/http_overview.htm)
 
 23. [cloudflare](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)
+
+24. [avast](https://www.avast.com/c-what-is-a-web-browser)
+
+25. [seobility](https://www.seobility.net/en/wiki/Rendering#:~:text=Rendering%20is%20a%20process%20used,to%20render%20a%20web%20page.)
+
+26. [developermozilla](<https://developer.mozilla.org/en-US/docs/Glossary/Developer_Tools#:~:text=Developer%20tools%20(or%20%22development%20tools,allow%20to%20inspect%20a%20website.)>)
