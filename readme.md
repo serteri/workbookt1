@@ -183,11 +183,168 @@ Devtools are essentials for developer to test their codes, and debug.(26)
 
 **Identify** THREE data structures used in the Python programming language and explain the reasons for using each.
 
-Data structures are important features of any programming languages. Python has different types of data structure such as lists, arrays,dictionaries,tuples etc..
+Data structures are important features of any programming languages. Python has different types of data structure such as lists, sets,dictionaries,tuples,strings etc..
 
-I will explain lists,arrays and dictionaries.
+I will explain lists,tuples and dictionaries.
 
-**Lists:**
+**Lists:** A list is a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0-9, ot the names of your favorite movies. You can put anything you want into a list. You can store sets of information in one place. It can be few items or million of items. You need to use [] to declare a list.(27)
+
+**Dictionaries:** Dictionaries allow tou to connect pieces of related information together. Limitless amount of information can be stored in dictionaries. Using dictionaries, you can model real-world objects more accurately. They stored information key:value pair. You need to use {} to declare a dictonary.(27)
+
+**Tuples:** Tupples are like lists but you can not change it. In python, if values can not change, its called immutable and immutable lists called tuples. You need to use () instead of [] to declare a tuple.(27)
+
+## Question 5
+
+**Describe** the features of interpreters and compilers and how they are different.
+
+**Interpreters:**When you write a code, you bundle it up and you sent it out the wild for people to run. The people who want to run it have an interpreter on their device for example linux,windows,android machines like java machine.That interpreter creates machine code on the fly. It takes each single instruction of the code, translates it then execute it on its own. The translation step before the program runs is fast because the program will start immediately but execution will run slowly. The great thing about interpretrs is that the program will fully execute until an error occurs. Erros will be displayed after each instruction that contains it.
+
+It converts the whole high-level language program to machine code line by line. Translation is done fast (line by line) but execution is slow. Execute the program without any intermediate code. Errors are displayed for each single instruction.
+
+**Compilers:**
+It takes the entire program you wrote in a high-level language and translates the whole of it into machine code at once.After this process an executable file will be ready to run. The translation takes some time to be done but after that execution is so fast. Any error in the program will fully stop it from working ,errors will be displayed at the end of the complitation.
+It converts the whole high-level language program to machine code at a time.
+Compilation is slow but execution is fast. Generates an intermediate code(executable file). Errors are displayed after the entire program is compiled.
+
+## Question 6
+
+**Identify** TWO commonly used programming languages and explain the benefits and drawbacks of each.
+
+The most common programming languages are Javascript, Python,Java,C#,C,C++,Go,R,Swift and PHP.
+
+I will talk about Javascript and Pyhton.
+
+**Javascript:**
+All modern web applications which are applications that used through internet browser are all written using Javascript because it has become the standard in developing web applications. To make user interface smarter and more intelligent we use Javascript to write logic to create features. Examples of features are user registration, booking a ticket, online shopping ,sharing photos, writing messages etc...
+
+It is a dynamic language. It is the only programming language that can actually be understood by a web browser.
+
+Benefits of Javascript:
+
+1. Speed.
+2. Clarity. To learn and understand Javascript is easy.
+3. It has the ability that works with other programming languages.
+4. Javascript supports different interfaces for developing and creating beatiful webpages.
+5. Adaptability. You can use Javascript front-end and back-end development language.
+6. It uses less code to create beatiful web sides.
+
+Disadvantage of JAvascript:
+
+1. Javascript code can be seen by anybody so other people may use it for vicious intentions.
+2. Browsers support Javascript but every browser interprets Javascript differently.
+3. Javascript not support multiple inheritance.
+
+4. A single code error can caused to stop the rendering whole Javascript code.(28)
+
+**Python:**
+Python is one of the most common programming languages in the world. Python programming language is used by software engineers, mathematicians, data analyts, scientists, accountants, networking engineers.
+
+It is very beginner friendly programinning language.
+
+Advantages:
+
+1. Beginner friendly.Easy to learn.
+2. Python is a multi purpose language. You can use it for data analysis, artifical intelligent, automation,web apps, mobile apps,desktop apps,testing, hacking etc...
+3. It has extensive libraries.
+4. It is portable which means to run Python on different platforms is easy.
+
+Disadvantages:
+
+1. It has poor memory efficiency which means Python requires a lot of memory space to run.
+2. If it used a lot of memory, it slows the speed of running the progra,. It is the biggest disadvantage.
+3. It is bad for mobile development. It is good for desktop and server platforms.
+4. Pyhon is insecure language for database application. Database access has limitations with Python language. Compare to other database programs,Python language is undeveloped and primitive.(29)
+
+## Question 8
+
+Explain control flow, using examples from the Python programming language.
+
+Computers are execude codes in order which is called sequential flow.
+But most programs make decision depends on some input or boolean expression which is True or False or comparison methods to make a decision.
+It is more efficient way to allow the program we wrote to make decisions depending on the input.
+
+Control flow is the main thing of all artificial intelligence. Contol flow uses comparison operators, functions, if-else statements, loops(for-while,match statements) and/or boolean values.
+examle of sequential flow:
+
+```python
+num = 10
+print("You're" + num +"years old")
+mom_age =42
+
+different_age = (mom_age - num)
+print("Your mother" + different_age + "older than you")
+```
+
+example of control flow:
+
+```python
+age = input("Please enter your age: ")
+if int(age) < 5 :
+    print("Ticket is free")
+elif 6 < int(age) <=18:
+    print("Ticket price is $15")
+elif 19 < int(age) <= 55:
+    print("Ticket price is $ 35")
+else:
+    print("Ticket price is $20")
+```
+
+## Question 9
+
+Explain the difference between type coercion and type conversion. Are either of these used in Python?
+
+Type coercion is a automatic conversion of values from one to another. For example string to numbers, numbers to strings. Python language does not support type coercion.
+
+It is always implicit. it can be subdivided into two categories:
+first one is programmer conmtrolled and second one is compiler controlled.
+Type conversion refers to the general process of changing a type. It can be either explicit or implicit. It is done by manual using built-in functions.
+
+Examples of explicit and implicit type conversions:
+
+Explicit type of conversion:
+
+```python
+
+a = 5
+
+x  =float(a)
+
+print(x)
+print(type(x))
+
+b = 5.9
+
+c = int(b)
+
+print(c)
+print(type(c))
+```
+
+Implicit type of conversion
+
+```python
+b = 123
+c = 1.23
+d =b+c
+print(d)
+
+#output would be 124.23
+
+
+
+a = 123
+b ='456'
+v = a+b
+print(v)
+
+#it throws a TypeError.
+#but Python does not support string and number using + sign to add together. We need to convert string to number before adding so we need to use explicit type conversion.
+
+```
+
+## Question 10
+
+Explain data types, using examples.
 
 ## References
 
@@ -240,3 +397,7 @@ I will explain lists,arrays and dictionaries.
 25. [seobility](https://www.seobility.net/en/wiki/Rendering#:~:text=Rendering%20is%20a%20process%20used,to%20render%20a%20web%20page.)
 
 26. [developermozilla](<https://developer.mozilla.org/en-US/docs/Glossary/Developer_Tools#:~:text=Developer%20tools%20(or%20%22development%20tools,allow%20to%20inspect%20a%20website.)>)
+27. [geeksforgeeks](https://www.geeksforgeeks.org/python-data-structures/)
+
+28. [data-flair](https://data-flair.training/blogs/advantages-disadvantages-javascript/)
+29. [geeksforgeeks](https://www.geeksforgeeks.org/disadvantages-of-python/)
