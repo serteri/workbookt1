@@ -255,6 +255,8 @@ Disadvantages:
 3. It is bad for mobile development. It is good for desktop and server platforms.
 4. Pyhon is insecure language for database application. Database access has limitations with Python language. Compare to other database programs,Python language is undeveloped and primitive.(29)
 
+## Question 7
+
 ## Question 8
 
 Explain control flow, using examples from the Python programming language.
@@ -345,6 +347,265 @@ print(v)
 ## Question 10
 
 Explain data types, using examples.
+
+Data types in Python are:
+String, number ,boolean ,sequence type ,mapping type, set type.
+
+Examples:
+
+1. String
+
+```python
+a = "hello"
+b= "How are you"
+c= "24"
+```
+
+2. Number: Number data types in Python are integer, float and complex.
+
+```python
+
+a =2
+b=2.4
+c = 1 +2j
+
+```
+
+3. Sequence type:
+
+```python
+
+a = ["s","b3",4,5]
+b = (23,45,66)
+
+```
+
+4. Mapping type:
+   '''python
+   a = {
+   a:23,
+   c:"hello"
+   }
+   '''
+5. Set type:
+
+```python
+students ={'david','niki','allison'}
+```
+
+6. Boolen type
+
+```python
+login = True
+answer = False
+12> 23 # False
+```
+
+## Question 11:
+
+Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
+
+- Identify the classes you would use to solve the problem
+- Write a short explanation of why you would use the classes you have identified
+
+Answer :
+
+If restaurant serves different types of food, it needs to be a main class to genralise food. I would name this class Food,
+
+And then I would create other child classes names Pizza ,Thai , Kebab and Soup. These class names are the food types that we served in the restaurant. Each type of food require different preparation, different ingredients so each child classes need to be created.
+
+```python
+class Food:
+   def __int__(self):
+
+
+class Pizza(Food):
+    def __init__(self,pizza_type):
+        self.pizza_type = pizza_type
+
+class Thai(Food):
+    def __init__(self,thaifood):
+        self.thaifood = thaifood
+
+class Kebab(Food):
+    def __init__(self,kebab_type):
+        self.kebab_type = kebab_type
+class Soup(Food):
+    def __init__(self,soup_type):
+        self.soup_type = soup_type
+```
+
+## Question 12:
+
+Identify and explain the error in the code snippet below that is preventing correct execution of the program
+
+```python
+celcius = input()
+fahrenheit = (celcius * 9/5) + 32
+print(f"The result is : {fahrenheit}.")
+```
+
+The code above is throwing an error because always input return string , so we can not use string in mathematical operations we need to convert string into numeric value. In this example it ise better to use float rather than int, because celcius part might not be integer, so it is better to use float here. We need to write input statements what we are asking. The correct code is below:
+
+```python
+celcius = input("Please enter a celcius degree to see Fahrenheit degree : ")
+fahrenheit = (float(celcius) *9/5) + 32
+
+print(f"The result is : {fahrenheit}."))
+
+```
+
+## Question 13
+
+The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+
+```python
+while (i< len(arr)-1) and (arr[i] < arr[i+1]):
+	i += i
+	arr[i] = arr[i+1]
+	arr[i+1] =arr[i]
+```
+
+This code is not working, I used for loop instead of while loop. My code is below:
+
+```python
+for items in arr:
+	for i in range(len(arr)-1):
+		if(arr[i] > arr[i+1]):
+			temp = arr[i]
+			arr[i] = arr[i+1]
+			arr[i+1] = temp
+```
+
+## Question 14
+
+Demonstrate your algorithmic thinking through completing the following two tasks, in order:
+
+1.  Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+2.  Write pseudocode for the process outlined in your flowchart
+
+3.  My flowchart is below:
+
+![FlowChart](./images/prime_number_finding.png)
+
+2. Pseudo for the process
+
+a. Start with empty list to fill prime numbers
+b. Loop all numbers 1 to 100 (include) using range(1,101)
+c. if number is 1 , not added to the list and continue
+d. if nummbers 2,3,,5, and 7 added to the list.
+e. if number divided by 2,3,5,7 not and remainder is 0 , not added to the list.
+f. For other numbers added to the list
+g. Display the list
+
+## Question 15
+
+Write pseudocode OR Python code for the following problem:
+You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
+
+I wrote the Python code for the problem:
+
+```python
+raining = input("Please enter True for rainy day or False for sunny Day: " )
+temperature = input("Please enter temperature Celcius: ")
+
+if raining and float(temperature) < 15:
+    print("It's wet and cold")
+elif not raining and float(temperature) < 15:
+    print("It's not raining but cold")
+elif not raining and float(temperature) => 15:
+    print("It's varm but not raining")
+else:
+    print("It's warm and raining")
+
+```
+
+## Question 16:
+
+ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
+
+- Python (1)
+- Ruby (2)
+- Bash (4)
+- Git (8)
+- HTML (16)
+- TDD (32)
+- CSS (64)
+- JavaScript (128)
+  ​
+  Write a program that allows a user to input their skills and then tells them
+  a) Their overall "coding skill score"
+  b) Skills they may want to learn, and how much each one would improve their score
+
+Answer:
+
+My code is below:
+
+```python
+skill = "Please enter your coding skill (Python , Ruby,Bash,Git,HTML,TDD,CSS,JavaScript) ,enter 'quit' to exit: "
+message = ''
+point = 0;
+cod_list =[]
+valid_list ={"Python" :1, "Ruby":2 , "Bash" : 4 ,"Git" : 8 ,"HTML" : 16 ,"TDD" : 32 ,"CSS" : 64 ,"JavaScript" : 128}
+
+
+def coding_point (name):
+	skill_point = 0
+	skill_list =[]
+	match name:
+			case 'Python':
+				skill_list.append("Python")
+				skill_point += 1
+			case 'Ruby':
+				skill_list.append("Ruby")
+				skill_point += 2
+			case 'Bash':
+				skill_list.append("Bash")
+				skill_point += 4
+			case 'Git':
+				skill_list.append("Git")
+				skill_point += 8
+			case 'HTML':
+				skill_list.append("HTML")
+				skill_point += 16
+			case 'TDD':
+				skill_list.append("TDD")
+				skill_point += 32
+			case 'CSS':
+				skill_list.append("CSS")
+				skill_point += 64
+			case 'JavaScript':
+				skill_list.append("JavaScript")
+				skill_point += 128
+	return skill_point, skill_list
+
+while message != 'quit':
+
+	message = input(skill)
+
+	if message == 'quit':
+		break
+	elif  message not in valid_list.keys():
+		message = input ("This is not valid please enter again :")
+		point += coding_point(message)[0]
+		cod_list.append(coding_point(message)[1])
+	else:
+		point += coding_point(message)[0]
+		cod_list.append(coding_point(message)[1])
+
+if cod_list[0]:
+	for i in range(len(cod_list)):
+		if cod_list[i][0] in valid_list.keys():
+			valid_list.pop(cod_list[i][0])
+else:
+	print("Empty list")
+
+print(f"Your overall coding skill score is {point}.")
+
+
+for key,value in valid_list.items():
+	print(f"You could add your coding skill {key} and you could earn {value} point")
+```
 
 ## References
 
