@@ -5,9 +5,9 @@
 _Answer:_
 
 First of all we need to define what _mark-up_ language is.
-A markup language is a human-readable language that is used by computer.
+A markup language is a languange that can be read by human esaily and it is used by computer.
 
-There are different mark-up languages. Some of markup languages are HTML (Hypertext Markup Language) , KML (Key whole Markup Langunage) , MathML(Mathematical Markup Langunage) , SGML(Standard Generalized Markup Language) ,XML(eXtensible Markup Language), XHTML(eXtensible Hypertext Markup Language). Most commomly used in the world is HTML.
+There are different mark-up languages in used. Some of markup languages are HTML (Hypertext Markup Language) , KML (Key whole Markup Langunage) , MathML(Mathematical Markup Langunage) , SGML(Standard Generalized Markup Language) ,XML(eXtensible Markup Language), XHTML(eXtensible Hypertext Markup Language). Most commomly used in the world is HTML.
 
 There is one thing is common for all mark-up languages which they all use of tags. For instance < >. What inside in brackets is represented by the formatted content. Tags come in pairs,one is opening and the other one is closing.(1) For example
 
@@ -24,7 +24,7 @@ But some of tags are self-closign tags.For example
 <area />
 ```
 
-Whatever inside between tags can be modified by the formatting. You can modify the text between tags for exampe you can make them bold or italic or you can change font-family,font-size etc...  
+We can put between opening and closing tags and can be modified by formatting . You can modify the text between tags for exampe you can make them bold or italic or you can change font-family,font-size etc...  
 There is also element in Markup languages. Element is like tag but extented. An element includes tags as well as what is written between them. For example:
 
 ```html
@@ -46,13 +46,13 @@ Markup languages are not as stirct as programming languages. For example if some
 
 Explain how each technology has contributed to the development of the internet.
 
-_Answer:_
+Answer:
 
 Defition of the technologies in the question:
 
 - Packets: Data is sent as a package through internet and then these packets are recombined by the computer. For example a user needs to load a file. The file is sent piece by piece from web server. It is called packets of data.And then reseamblied it by the user's computer.(4)
 
-Packets are made of a header and a payload. The header is the data used by networking hardware. The payload is extracted and used by an operation systems, application software or higher layer protocols. Each packet contains a destination address on the network, so routers known where forward them.
+Packets are made of a header and a payload.Networking hardware used the header which is the data. Operation systems extract and use the payload.Application software or higher layer protocols used the payload as well. Each packet contains a destination address on the network, so routers known where forward them.
 
 **IP address(IPv4 and Ipv6)**
 
@@ -62,7 +62,7 @@ There are two types of Ip address which are static IP address and dynamic IP add
 1. Static dynamic address: It never changes. It determines a straightforward and stable way of communication.
 2. Dynamic IP address: These are the interim Ip addresses. Each time a computer connected to internet an IP address changes accordingly.There is a pool of IP address and these IP address borrowed from there.
 
-_IP version 4 and IP version 6_ (7)
+IP version 4 and IP version 6 (7)
 
 At the moment there are two types of IP address running which are IP version 4(IPv4) amd IP version 6 (IPv6). There are many aspects with there two types. It was planned to take over the IPv4. It used 128-bit address and supports 2128 i.e. rougly 3.4 X 1038 address.
 
@@ -110,13 +110,13 @@ Routing is the progress of choosing a direction over one or more networks. The b
 
 **Domains and DNS**
 
-Domain or domain name is the location of a website. Every website has an IP address.It is good for computers but it is kind of difficult to remember it. That's why we use domain names instead of IP address. A domain name can have up to 63 characters.
+Domain or domain name is the location of a website. Every website has an IP address.It is good for computers but it is kind of difficult to remember it for humans. That's why we use domain names instead of IP address. A domain name can have up to 63 characters.
 
 ![domain name exmaple](./images/domain_1.png)(13)
 
-An URL (complete web address) consists of different parts : protocol,domain name (includes subdomain,seceon-level domain,top-level domain),subdirectory,path.
+An URL (complete web address) consists of different parts : protocol,domain name (includes subdomain,second-level domain,top-level domain),subdirectory,path.
 
-On the example above:
+On the example below:
 
 Protocol:https://
 domain name:blog.hubspot.com
@@ -132,7 +132,7 @@ path:/what-is-a-domain
 
 DNS is the domain name system. It is like the phonebook of the Internet.(16)
 
-DNS converts domain names to IP address so Internet resources can be loaded by browsers. Computers and machines do not understand domain names so it needed to be converted to numerical values.
+Domain names are converted by DNS and Internet resources can be loaded by browsers. Computers and machines do not understand domain names so it needed to be converted to numerical values.
 
 # Question 3
 
@@ -154,9 +154,9 @@ TCP can reduce the speed of the network because it runs several layers.No changi
 ![TCP](./images/tcp2.png)(19)
 
 HTTP and HTTPS:
-HTTP is the hypertext Transfer Protocol. it is the foundation of the World Wide Web(www). It is an application layer protocol. It is a request-response protocol for the web.(20)
+HTTP is the Hypertext Transfer Protocol. it is the foundation of the World Wide Web(www). It is an application layer protocol. It is a request-response protocol for the web.(20)
 
-It was created to implement smooth communicate between devices and applications on the web.(21) There are two sides client and server.Client sends a request to the server. Server reponds the request with a status line or error code.(22)
+It was created to implement smooth communicate between devices and applications on the web.(21) There are two sides: client and server.Client sends a request to the server and server responds the request with a status line or error code.(22)
 
 ![http](./images/htpp.gif)(22)
 
@@ -171,7 +171,7 @@ It is used a protocol called Transport Layer Security(TLS) but formely known as 
 A web browser is a software application that allows us to access to the World Wide Web.(24)
 
 Web browsers are used primarily for displaying and accessing websites on the internet.
-A web request is a communicating message that is transmitted between the client and the servers. A client enter a URL address and request to connect the website or request to get information. The web browser then connect to the server to get access to the website or get information.
+A client enter a URL address and request to connect the website or request to get information. The web browser then connect to the server to get access to the website or get information.
 
 If the website or requested information exists and then the server sends the information to the client or web browser.
 
@@ -187,9 +187,9 @@ Data structures are important features of any programming languages. Python has 
 
 I will explain lists,tuples and dictionaries.
 
-**Lists:** A list is a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0-9, ot the names of your favorite movies. You can put anything you want into a list. You can store sets of information in one place. It can be few items or million of items. You need to use [] to declare a list.(27)
+**Lists:** A list is a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0-9, or the names of your favorite movies. You can put anything you want into a list. You can store sets of information in one place. It can be few items or million of items. You need to use [] to declare a list. Items put in a list in an order.(27)
 
-**Dictionaries:** Dictionaries allow tou to connect pieces of related information together. Limitless amount of information can be stored in dictionaries. Using dictionaries, you can model real-world objects more accurately. They stored information key:value pair. You need to use {} to declare a dictonary.(27)
+**Dictionaries:** Dictionaries allow tou to connect pieces of related information together. Limitless amount of information can be stored in dictionaries. Using dictionaries, you can model real-world objects more accurately. They stored information key:value pair. You need to use {} to declare a dictonary.(27) There is no order in dictionaries.
 
 **Tuples:** Tupples are like lists but you can not change it. In python, if values can not change, its called immutable and immutable lists called tuples. You need to use () instead of [] to declare a tuple.(27)
 
@@ -197,14 +197,14 @@ I will explain lists,tuples and dictionaries.
 
 **Describe** the features of interpreters and compilers and how they are different.
 
-**Interpreters:**When you write a code, you bundle it up and you sent it out the wild for people to run. The people who want to run it have an interpreter on their device for example linux,windows,android machines like java machine.That interpreter creates machine code on the fly. It takes each single instruction of the code, translates it then execute it on its own. The translation step before the program runs is fast because the program will start immediately but execution will run slowly. The great thing about interpretrs is that the program will fully execute until an error occurs. Erros will be displayed after each instruction that contains it.
+**Interpreters:** When you write a code, the people who want to run your code could have an interpreter on their device for example linux,windows,android machines like java machine.That interpreter creates machine code. It takes each single instruction of the code, translates it then execute it on its own. The translation step before the program runs is fast because the program will start immediately but execution will run slowly. The program is fully executed until an error occurs so the program wont stop due to error. Erros will be displayed after each instruction that contains it.
 
 It converts the whole high-level language program to machine code line by line. Translation is done fast (line by line) but execution is slow. Execute the program without any intermediate code. Errors are displayed for each single instruction.
 
 **Compilers:**
-It takes the entire program you wrote in a high-level language and translates the whole of it into machine code at once.After this process an executable file will be ready to run. The translation takes some time to be done but after that execution is so fast. Any error in the program will fully stop it from working ,errors will be displayed at the end of the complitation.
+It takes the entire program you wrote in a high-level language and translates the whole of it into machine code at once.After this process, an executable file will be ready to run. The translation takes some time to be done but after that execution is so fast. Any error in the program will fully stop it from working ,errors will be displayed at the end of the complitation.
 It converts the whole high-level language program to machine code at a time.
-Compilation is slow but execution is fast. Generates an intermediate code(executable file). Errors are displayed after the entire program is compiled.
+Generates an intermediate code(executable file).
 
 ## Question 6
 
@@ -251,11 +251,51 @@ Advantages:
 Disadvantages:
 
 1. It has poor memory efficiency which means Python requires a lot of memory space to run.
-2. If it used a lot of memory, it slows the speed of running the progra,. It is the biggest disadvantage.
+2. If it used a lot of memory, it slows the speed of running the program. It is the biggest disadvantage.
 3. It is bad for mobile development. It is good for desktop and server platforms.
 4. Pyhon is insecure language for database application. Database access has limitations with Python language. Compare to other database programs,Python language is undeveloped and primitive.(29)
 
 ## Question 7
+
+Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+
+List of topics containing ethical issues:
+
+- access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs)
+- intellectual property, copyright, and acknowledgement.
+- criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
+- GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
+- freedom of thought, conscience, speech and the media
+- aggressive sales and marketing practices designed to mislead and deceive consumers
+- trading of shares on the stock exchange OR crypto-currencies
+
+For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way. (Word count guide: 200 words max)
+
+Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
+
+Answer:
+
+I did choose access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs) and aggressive sales and marketing practices designed to mislead and deceive consumers.
+
+Personal information is very important for us. It includes your ID number ,your driver licence number,signature,email address ,your bank details, your medical history, your passport number, your address, your phone number etc.. There are different type of personal information exists in law such as sensitive information(political opinion, religious beliefs),health information,credit information,employee record, tax file number information.
+
+Some websites used these information to verify you as a person and based on that you can use their services or get different type of information from them .But there are many concerns for security for our personal information. IT professionals in this case etchical hackers or knownn as white hat hackers are responsible to secure our information prevent obtaining from black hat or gray hat hackers. These type of hackers used these information for their advantage for example for threating us or to try to get some money from us.
+
+Aggressive sales and marketing practices designed to mislead and deceive consumers are relating to personal information hacking or these personal information used for companies to persuade us to buy something from them.
+
+Our personal information can be sold to companies and these companies can used these information persistently marketing purposes.IT personnel's duty is to prevent these type of misleading marketing activities to be occured.In order to prevent this type of behaviour, IT personnel should protect our personal information.
+
+I will talk about access personal information case study:
+
+In recent,in Australia two cyber attack occured one of them is Optus and the other one is Medibank. I,personally, is a costumer for both of them.
+
+In Optus case, this attack targeting customers data as far back as 2017. The data breach has been identidified as sophisticated. Optus was leaved their system vulnerable through an unprotected API(Application Programming Interface). These type of cyber attack describes as basic attack. Around 4 millions user personal information were stolen including driver licence number,name,surname,date of birth,phone numbers,email address. Messages, voice calls,account billing and payment details and account passwords have not been exposed by hackers. Optus has advised that around 10,000 customers details have been released on the web.
+
+After this attack, Optus is collaborating with the AFP,Deloitte,OAIC,IDcae and other relating industry regulators to investigate the attack. Optus offers customes who affected the attack one year free Equifax Protect subscriptions.
+
+I think in this attack ,Optus around 90% guilty for leave open one of unsecured the API's. There is a human error. IT professionals should examine all possible attack points. Optus ethical hackers should be able to monitor their system more closely and practice penetration testing more regularly.
+
+Optus employees responded the attack very quick but they can not prevent attackers steal customer's personal details. They should not have left their vulnerable points open and practice how attackers might attack on their server and take an action before it happened.
 
 ## Question 8
 
